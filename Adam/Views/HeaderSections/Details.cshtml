@@ -1,0 +1,74 @@
+﻿@model Adam.Models.HeaderSection
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HeaderSection</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Headerh1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Headerh1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paragraph)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paragraph)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopSpan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopSpan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleSpan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleSpan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfileImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfileImg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RightImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RightImg)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

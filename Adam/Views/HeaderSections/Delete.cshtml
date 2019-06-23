@@ -1,0 +1,80 @@
+﻿@model Adam.Models.HeaderSection
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HeaderSection</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Headerh1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Headerh1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paragraph)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paragraph)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopSpan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopSpan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleSpan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleSpan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfileImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfileImg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RightImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RightImg)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
